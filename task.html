@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <style>
+
+    marquee{ background-color: aqua;
+        padding: 5px;
+
+        }
+        #dlt{
+   width: 50px;
+   height: 50px;
+}
+
+form{
+    padding: 10px;
+}
+
+
+.inp{
+    width: 100%;
+    border: 3px solid black;
+    
+}
+.inp:hover{ background-color: aqua;}
+
+.btn2{
+    background-color: rgb(81, 202, 81);
+}
+.dd1{
+    margin-top: 10px;
+    padding-right: 10px;
+    text-align: end;
+}
+    </style>
+
+</head>
+<body>
+<marquee behavior="alternate" direction="right"><h1 style="  color: rgb(105, 105, 238);">WELCOME TO MACHSTATZ</h1></marquee>
+    <div style="text-align: center;">
+        <img height="100px" src="data:image/png;base64,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" alt="">
+    </div>
+    <hr><hr>
+
+    
+
+    <div id="d1">
+
+
+    </div>
+    
+    
+
+      <div style="border: 3px solid rgb(117, 115, 115);">
+          <h2 style="padding: 10px;">Add User</h2> <hr>
+
+    <form  action="">
+        <div class="container">
+        <div>
+            <label for="">First Name</label><br>
+            <input class="inp" type="text" placeholder="Enter your First Name" name="firstname" id="fstname"></div>
+        <div>
+            <label for="">Last Name</label><br>
+            <input class="inp" type="text" placeholder="Enter your last Name" name="lastname" id="lstname"></div>
+        <div>
+            <label for="">Profiles</label> <br>
+            <!-- <input type="text" name="" id=""> -->
+            <select style="width: 100%;"  name="" placeholder="select" id="">
+                 <option value=""></option>
+                <!-- <option value="">frontend developer</option>
+                <option value="">testing</option>
+                <option value="">backend developer</option> -->
+            </select>
+        </div>
+         <div>
+            <label for="">Username</label><br>
+            <input class="inp" type="text" placeholder="Enter your Name" name="" id="username"></div>
+        <div> 
+            <label for="">Email Address</label><br>
+            <input class="inp" type="email" placeholder="Enter your email id" name="email" id="email"></div>
+        <div>
+            <label for="">Password</label><br>
+            <input  class="inp" type="password" placeholder="Enter password" name="" id=""></div>
+        </div> 
+        <br>
+        <hr>
+       <div class="dd1"><input  class="btn1" type="button" value="cancel" onclick="dlt()" > 
+        <input class="btn2" type="button" name="button" id="btn" value="Add" onsubmit="get()" onclick="get()">
+ </div>
+    </form>
+</div>
+
+    <div>
+        <table id="mytable">             
+           <tr>
+            <th  class="d2">Id</th>
+            <!-- <th class="d2" >Id</th> -->
+            <th class="d2" >url</th>
+           </tr>
+         </table>
+    </div>
+
+    <script src="./task.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>   <script src="./task.js"></script>
+</body>
+</html>
